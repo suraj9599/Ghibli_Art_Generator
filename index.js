@@ -8,7 +8,7 @@ const GROUP_CHAT_ID = -1002555257261;
 const bot = new TelegramBot(TOKEN, { polling: true });
 
 // Connect to MongoDB
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGODB_URI)
     .then(() => console.log("Connected to MongoDB"))
     .catch(err => console.error("MongoDB connection error:", err));
 
