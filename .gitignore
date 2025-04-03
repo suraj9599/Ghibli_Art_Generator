@@ -1,0 +1,8 @@
+# Ignore environment variables and sensitive files
+.env
+node_modules/
+package-lock.json
+
+# Ignore logs and system files
+*.log
+.DS_Store
